@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0">
+         <children>
+            <Line endX="640.0" layoutX="387.0" layoutY="105.0" startY="-1.220703097715159E-6" stroke="#dadfe8" />
+            <Text fill="#2d3748" layoutX="389.0" layoutY="94.0" stroke="#2d3747" strokeLineCap="ROUND" strokeMiterLimit="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PDA Simulator">
+               <font>
+                  <Font name="Segoe UI Bold" size="46.0" />
+               </font>
+            </Text>
+            <Pane layoutX="387.0" layoutY="141.0" prefHeight="241.0" prefWidth="640.0">
+               <children>
+                  <Text fill="#2d3748" layoutY="20.0" scaleZ="0.0" stroke="#2d3747" strokeLineCap="ROUND" strokeMiterLimit="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input String:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="19.2" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="input" layoutY="35.0" prefHeight="40.0" prefWidth="640.0" promptText="e.g. babbabab" />
+                  <Button fx:id="validate" layoutY="87.03" mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" text="Validate" textFill="#2d3748">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="simulate" layoutX="94.41" layoutY="87.3" mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" text="Simulate" textFill="#2d3748">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="clear" layoutX="195.0" layoutY="87.3" mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" text="Clear" textFill="#2d3748" >
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#2d3748" layoutX="-3.0" layoutY="198.0" stroke="#2d3747" strokeLineCap="ROUND" strokeMiterLimit="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regular Expression:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="19.2" />
+                     </font>
+                  </Text>
+                  <Text fill="#2d3748" layoutX="192.0" layoutY="199.0" stroke="#2d3747" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeMiterLimit="1.0" strokeType="INSIDE" strokeWidth="0.0" text="(aba+bab) (a+b)* (bab) (a+b)* (a+b+ab+ba) (a+b)*">
+                     <font>
+                        <Font name="Segoe UI" size="19.2" />
+                     </font>
+                  </Text>
+                  <Text fill="#2d3748" layoutX="-3.0" layoutY="235.0" stroke="#2d3747" strokeLineCap="ROUND" strokeMiterLimit="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language Accepted:">
+                     <font>
+                        <Font name="Segoe UI Black" size="19.2" />
+                     </font>
+                  </Text>
+                  <Text fill="#2d3748" layoutX="192.0" layoutY="235.0" stroke="#2d3747" strokeLineCap="ROUND" strokeMiterLimit="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[a, b]">
+                     <font>
+                        <Font name="Segoe UI" size="19.2" />
+                     </font>
+                  </Text>
+                  <Line endX="640.0" layoutY="142.0" startY="-1.220703097715159E-6" stroke="#dadfe8" />
+               </children>
+            </Pane>
+            <Line endX="640.0" layoutX="387.0" layoutY="420.0" startY="-1.220703097715159E-6" stroke="#dadfe8" />
+            <VBox layoutX="-36.0" layoutY="-25.0" prefHeight="200.0" prefWidth="100.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
